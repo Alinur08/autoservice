@@ -6918,8 +6918,8 @@
     },
     "Core1/1.0.0": {
       "type": "project",
-      "path": "../../RecapProject/Core1/Core1.csproj",
-      "msbuildProject": "../../RecapProject/Core1/Core1.csproj"
+      "path": "../Core/Core1.csproj",
+      "msbuildProject": "../Core/Core1.csproj"
     },
     "Entities/1.0.0": {
       "type": "project",
@@ -6961,11 +6961,11 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
+            "C:\\Users\\alinu\\source\\repos\\AvtoServiceBackEnd\\Core\\Core1.csproj": {
+              "projectPath": "C:\\Users\\alinu\\source\\repos\\AvtoServiceBackEnd\\Core\\Core1.csproj"
+            },
             "C:\\Users\\alinu\\source\\repos\\AvtoServiceBackEnd\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\alinu\\source\\repos\\AvtoServiceBackEnd\\Entities\\Entities.csproj"
-            },
-            "C:\\Users\\alinu\\source\\repos\\RecapProject\\Core1\\Core1.csproj": {
-              "projectPath": "C:\\Users\\alinu\\source\\repos\\RecapProject\\Core1\\Core1.csproj"
             }
           }
         }
