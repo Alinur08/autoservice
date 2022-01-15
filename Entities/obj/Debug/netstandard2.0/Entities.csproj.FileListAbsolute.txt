@@ -1,0 +1,12 @@
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\bin\Debug\netstandard2.0\Entities.deps.json
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\bin\Debug\netstandard2.0\Core1.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\bin\Debug\netstandard2.0\Core1.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.csprojAssemblyReference.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfoInputs.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.AssemblyInfo.cs
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.csproj.CopyComplete
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Entities\obj\Debug\netstandard2.0\Entities.pdb

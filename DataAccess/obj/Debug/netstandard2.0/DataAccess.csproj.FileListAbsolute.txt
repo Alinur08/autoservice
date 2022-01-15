@@ -1,0 +1,14 @@
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\DataAccess.deps.json
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\Core1.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\Core1.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.csprojAssemblyReference.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfoInputs.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.AssemblyInfo.cs
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.csproj.CopyComplete
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\DataAccess\obj\Debug\netstandard2.0\DataAccess.pdb

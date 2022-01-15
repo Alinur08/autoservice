@@ -1,0 +1,16 @@
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Business.deps.json
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Business.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Business.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Core1.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\DataAccess.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Entities.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Core1.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\DataAccess.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\bin\Debug\netstandard2.0\Entities.pdb
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.csprojAssemblyReference.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.AssemblyInfoInputs.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.AssemblyInfo.cs
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.csproj.CopyComplete
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.dll
+C:\Users\alinu\source\repos\AvtoServiceBackEnd\Business\obj\Debug\netstandard2.0\Business.pdb
