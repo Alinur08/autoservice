@@ -11,9 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccess", "DataAccess\Da
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{94CE3BE3-4615-4199-9CA4-DE5AD7F76495}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core1", "..\RecapProject\Core1\Core1.csproj", "{782E1335-5F2B-4523-9675-3FCEC1F5C300}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{FC03A7A8-CCDA-4F32-8671-9797C1EBE84C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core1", "Core\Core1.csproj", "{FC03A7A8-CCDA-4F32-8671-9797C1EBE84C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +35,6 @@ Global
 		{94CE3BE3-4615-4199-9CA4-DE5AD7F76495}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{94CE3BE3-4615-4199-9CA4-DE5AD7F76495}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{94CE3BE3-4615-4199-9CA4-DE5AD7F76495}.Release|Any CPU.Build.0 = Release|Any CPU
-		{782E1335-5F2B-4523-9675-3FCEC1F5C300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{782E1335-5F2B-4523-9675-3FCEC1F5C300}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{782E1335-5F2B-4523-9675-3FCEC1F5C300}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{782E1335-5F2B-4523-9675-3FCEC1F5C300}.Release|Any CPU.Build.0 = Release|Any CPU
 		{FC03A7A8-CCDA-4F32-8671-9797C1EBE84C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FC03A7A8-CCDA-4F32-8671-9797C1EBE84C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FC03A7A8-CCDA-4F32-8671-9797C1EBE84C}.Release|Any CPU.ActiveCfg = Release|Any CPU
