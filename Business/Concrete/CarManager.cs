@@ -64,8 +64,9 @@ namespace Business.Concrete
 
         public DataResult<List<CarForListDto>> GetCars()
         {
-            var cars = _mapper.Map<List<CarForListDto>>(_carDal.GetList().ToList());
-            return new SuccessDataResult<List<CarForListDto>>(cars);
+            //var cars = _mapper.Map<List<CarForListDto>>(_carDal.GetList().ToList());
+            //return new SuccessDataResult<List<CarForListDto>>(cars);
+            return new SuccessDataResult<List<CarForListDto>>("Sccess",new List<CarForListDto>());
         }
 
         public DataResult<List<CarForListDto>> GetCarsByBrand(int brandId)
