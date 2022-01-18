@@ -29,7 +29,12 @@ Sistem-ə admin kimi daxil olmaq üçün aşağıdaki uzantıya doğru email və
 
     api/cars/getall
     -masinlarin hamsini getirir
-    
+    {
+      model,
+      graduationDate,
+      brandName,
+      mainPhoto
+    }
     api/cars/getmains
     -ana sehifede gorunen masinlar
     
