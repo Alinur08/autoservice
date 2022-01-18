@@ -11,26 +11,26 @@ namespace WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CarVideosController : ControllerBase
+    public class SparePartVideosController : ControllerBase
     {
-        private ICarVideoService _carVideoService;
-        public CarVideosController(ICarVideoService carVideoService)
+        private ISparePartVideoService _sparePartVideoService;
+        public SparePartVideosController(ISparePartVideoService sparePartVideoService)
         {
-            _carVideoService = carVideoService;
+            _sparePartVideoService = sparePartVideoService;
         }
         [HttpGet("getvideos")]
-        public IActionResult GetVideos(int carId)
+        public IActionResult GetVideos()
         {
-            var result = _carVideoService.GetVideos(carId);
+            var result = _sparePartVideoService.GetVideos();
             if (result.Success) { 
                return Ok(result);
             }
             return BadRequest(result);
         }
         [HttpPost("add")]
-        public IActionResult AddVideo([FromForm]CarVideoCreationDto video,int carId)
+        public IActionResult AddVideo([FromForm]SparePartVideoCreationDto video)
         {
-            var result = _carVideoService.AddVideo(video,carId);
+            var result = _sparePartVideoService.AddVideo(video);
             if (result.Success)
             {
                 return Ok(result);
@@ -40,7 +40,7 @@ namespace WebApi.Controllers
         [HttpPost("delete")]
         public IActionResult DeleteVideo(int videoId)
         {
-            var result = _carVideoService.DeleteVideo(videoId);
+            var result = _sparePartVideoService.DeleteVideo(videoId);
             if (result.Success)
             {
                 return Ok(result);

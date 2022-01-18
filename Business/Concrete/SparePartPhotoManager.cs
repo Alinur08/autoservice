@@ -1,6 +1,7 @@
 ﻿using AutoMapper;
 using Business.Abstract;
 using Business.BusinessAspect.AutoFac;
+using Core.Configurations.CloudinaryConfiguration.Entities.DTOs;
 using Core.Utilities.Results;
 using Core1.Aspects.Autofac.Transaction;
 using Core1.Configurations;
@@ -26,12 +27,12 @@ namespace Business.Concrete
             _mapper = mapper;
         }
         [TransactionScopeAspect]
-        [SecuredOperation("Admin")]
+        //[SecuredOperation("Admin")]
         public Result AddPhoto(SparePartPhotoForCreationDto photo, int sparePartId)
         {
-            var result = _fileService.AddPhotoForEntity(photo);
+            PhotoForCreationDto result = _fileService.AddPhotoForEntity(photo).Data;
 
-            SparePartPhoto sparePartPhotoForDatabase = _mapper.Map<SparePartPhoto>(result.Data);
+            SparePartPhoto sparePartPhotoForDatabase = _mapper.Map<SparePartPhoto>(result);
             sparePartPhotoForDatabase.SparePartId = sparePartId;
             _sparePartPhotoDal.Add(sparePartPhotoForDatabase);
             return new SuccessResult();

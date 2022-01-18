@@ -5,8 +5,8 @@ using System.Text;
 
 namespace Entities.DTOs
 {
-    public class CarVideoReturnDto:VideoForReturnDto
+    public class SparePartVideoReturnDto:VideoForReturnDto
     {
-        public int CarId { get; set; }
+        public int SparePartId { get; set; }
     }
 }

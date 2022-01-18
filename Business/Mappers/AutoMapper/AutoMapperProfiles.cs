@@ -15,10 +15,15 @@ namespace Business.Mappers.AutoMapper
         public AutoMapperProfiles()
         {
             CreateMap<PhotoForCreationDto, CarPhoto>();
+            CreateMap<TransCarePhoto, TransCarePhotoReturnDto>();
+            //CreateMap<SparePartCreationDto, SparePart>();
+            CreateMap<TransCareForAddDto, TransCare>();
             CreateMap<CarForAddDto, Car>();
-            CreateMap<VideoForCreationDto, CarVideo>();
+            CreateMap<PhotoForCreationDto, TransCarePhoto>();
+            CreateMap<PhotoForCreationDto, SparePartPhoto>();
+            CreateMap<VideoForCreationDto, SparePartVideo>();
             CreateMap<CarPhoto, CarPhotoForReturnDto>();
-            CreateMap<CarVideo, CarVideoReturnDto>();
+            CreateMap<SparePartVideo, SparePartVideoReturnDto>();
             CreateMap<Car, CarForListDto>()
                 .ForMember(dest => dest.MainPhoto, opt =>
                 {

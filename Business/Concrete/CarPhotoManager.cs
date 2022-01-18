@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Business.Abstract;
+using Business.BusinessAspect.AutoFac;
 using Core.Utilities.Results;
 using Core1.Aspects.Autofac.Transaction;
 using Core1.Configurations;
@@ -25,6 +26,7 @@ namespace Business.Concrete
             _mapper = mapper;
         }
         [TransactionScopeAspect]
+        [SecuredOperation("Admin")]
         public Result AddPhoto(CarPhotoForCreationDto carPhoto,int carId)
         {
             var result = _fileService.AddPhotoForEntity(carPhoto);
@@ -34,6 +36,7 @@ namespace Business.Concrete
             _carPhotoDal.Add(carPhotoForDatabase);
             return new SuccessResult();
         }
+        [SecuredOperation("Admin")]
         public Result AddMainPhoto(CarPhotoForCreationDto carPhoto, int carId)
         {
             var result = _fileService.AddPhotoForEntity(carPhoto);
@@ -44,12 +47,13 @@ namespace Business.Concrete
             _carPhotoDal.Add(carPhotoForDatabase);
             return new SuccessResult();
         }
-
+        [SecuredOperation("Admin")]
         public Result DeletePhoto(CarPhoto carPhoto)
         {
             _carPhotoDal.Delete(carPhoto);
             return new SuccessResult();
         }
+        [SecuredOperation("Admin")]
         public Result UpdatePhoto(CarPhoto carPhoto)
         {
             _carPhotoDal.Update(carPhoto);

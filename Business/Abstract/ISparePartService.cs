@@ -1,5 +1,6 @@
 ﻿using Core.Utilities.Results;
 using Entities.Concrete;
+using Entities.DTOs;
 using Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ namespace Business.Abstract
 {
     public interface ISparePartService
     {
-        Result Add(SparePart sparePart);
+        Result Add(SparePartCreationDto sparePart);
         Result Delete(SparePart sparePart);
         Result Update(SparePart sparePart);
         DataResult<List<SparePart>> GetSpareParts();

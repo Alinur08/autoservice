@@ -13,5 +13,13 @@ namespace DataAccess.Concrete.EntityFramework
 {
     public class EfSparePartDal:EfEntityRepositoryBase<SparePart,AutoServiceContext>,ISparePartDal
     {
+        public new IList<SparePart> GetList(Expression<Func<SparePart, bool>> filter = null)
+        {
+            using (var context = new AutoServiceContext())
+            {
+                var data = context.SpareParts.Include(c => c.Model).Include(c=>c.Brand).Include(c=>c.SparePartPhotos);
+                return filter == null ? data.ToList() : data.Where(filter).ToList();
+            }
+        }
     }
 }

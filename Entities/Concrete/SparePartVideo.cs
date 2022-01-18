@@ -6,10 +6,8 @@ using System.Text;
 
 namespace Entities.Concrete
 {
-    public class CarVideo:Video
+    public class SparePartVideo:Video
     {
-        public int CarId { get; set; }
-        public Car Car { get; set; }
-
+     
     }
 }

@@ -17,7 +17,7 @@ namespace DataAccess.Concrete.EntityFramework
         {
             using (var context = new AutoServiceContext())
             {
-                var data = context.Cars.Include(c => c.Brand);
+                var data = context.Cars.Include(c => c.Brand).Include(c=>c.CarPhotos).Include(c=>c.CarSupplies);
                 return filter == null ? data.ToList() : data.Where(filter).ToList();
             }
         }

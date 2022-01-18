@@ -18,12 +18,14 @@ namespace DataAccess.Concrete.EntityFramework.Context
         public DbSet<Supply> Supplies { get; set; }
         public DbSet<CarSupply> CarSupplies { get; set; }
         public DbSet<CarPhoto> CarPhotos { get; set; }
-        public DbSet<CarVideo> CarVideos { get; set; }
+        public DbSet<SparePartVideo> SparePartVideos { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<OperationClaim> OperationClaims { get; set; }
         public DbSet<UserOperationClaim> UserOperationClaims { get; set; }
         public DbSet<SparePart> SpareParts { get; set; }
         public DbSet<Model> Models { get; set; }
         public DbSet<SparePartPhoto> SparePartPhotos { get; set; }
+        public DbSet<TransCare> TransCares { get; set; }
+        public DbSet<TransCarePhoto> TransCarePhotos { get; set; }
     }
 }

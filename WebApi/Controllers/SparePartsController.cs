@@ -1,5 +1,6 @@
 ﻿using Business.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System;
@@ -19,16 +20,16 @@ namespace WebApi.Controllers
             _sparePartService = sparePartService;
         }
         [HttpGet("getall")]
-        public IActionResult GetAll(int year)
+        public IActionResult GetAll()
         {
-            var result =_sparePartService.GetSparePartsByYear(year);
+            var result =_sparePartService.GetSpareParts();
             if (result.Success)
             {
                 return Ok(result);
             }
             return BadRequest(result);
         }
-        [HttpGet("getAllbybrand")]
+        [HttpGet("getbybrand")]
         public IActionResult GetAllByBrand(int brandId)
         {
             var result = _sparePartService.GetSparePartsByBrand(brandId);
@@ -38,7 +39,7 @@ namespace WebApi.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("getAllByModel")]
+        [HttpGet("getByModel")]
         public IActionResult GetAllByModel(int modelId)
         {
             var result = _sparePartService.GetSparePartsByModel(modelId);
@@ -48,7 +49,7 @@ namespace WebApi.Controllers
             }
             return BadRequest(result);
         }
-        [HttpGet("getAllByModel")]
+        [HttpGet("getByYear")]
         public IActionResult GetAllByYear(int year)
         {
             var result = _sparePartService.GetSparePartsByYear(year);
@@ -69,7 +70,7 @@ namespace WebApi.Controllers
             return BadRequest(result);
         }
         [HttpPost("add")]
-        public IActionResult Add(SparePart sparePart)
+        public IActionResult Add([FromForm]SparePartCreationDto sparePart)
         {
             var result = _sparePartService.Add(sparePart);
             if (result.Success)
@@ -79,7 +80,7 @@ namespace WebApi.Controllers
             return BadRequest(result);
         }
         [HttpPost("delete")]
-        public IActionResult Delete(SparePart sparePart)
+        public IActionResult Delete([FromBody]SparePart sparePart)
         {
             var result = _sparePartService.Delete(sparePart);
             if (result.Success)
@@ -89,7 +90,7 @@ namespace WebApi.Controllers
             return BadRequest(result);
         }
         [HttpPost("update")]
-        public IActionResult Update(SparePart sparePart)
+        public IActionResult Update([FromBody] SparePart sparePart)
         {
             var result = _sparePartService.Update(sparePart);
             if (result.Success)

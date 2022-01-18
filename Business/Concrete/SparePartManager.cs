@@ -1,8 +1,11 @@
-﻿using Business.Abstract;
+﻿using AutoMapper;
+using Business.Abstract;
 using Business.BusinessAspect.AutoFac;
 using Core.Utilities.Results;
+using Core1.Aspects.Autofac.Transaction;
 using DataAccess.Abstract;
 using Entities.Concrete;
+using Entities.DTOs;
 using Entities.Models;
 using System;
 using System.Collections.Generic;
@@ -14,14 +17,26 @@ namespace Business.Concrete
     public class SparePartManager : ISparePartService
     {
         private ISparePartDal _sparePartDal;
-        public SparePartManager(ISparePartDal sparePartDal)
+        private ISparePartPhotoService _sparePartPhotoService;
+        private IMapper _mapper;
+        public SparePartManager(IMapper mapper,ISparePartDal sparePartDal, ISparePartPhotoService sparePartPhotoService)
         {
             _sparePartDal = sparePartDal;
+            _mapper = mapper;
+            _sparePartPhotoService = sparePartPhotoService;
         }
-        [SecuredOperation("Admin")]
-        public Result Add(SparePart sparePart)
+        
+        [TransactionScopeAspect()]
+        public Result Add(SparePartCreationDto sparePart)
         {
-            _sparePartDal.Add(sparePart);
+            var sparePartForDb = new SparePart { BrandId= sparePart.BrandId,Detail=sparePart.Detail,ModelId=sparePart.ModelId,Year=sparePart.Year};
+            _sparePartDal.Add(sparePartForDb);
+
+            foreach (var photo in sparePart.Photos)
+            {
+                _sparePartPhotoService.AddPhoto(new SparePartPhotoForCreationDto {File=photo }, sparePartForDb.Id);
+            }
+
             return new SuccessResult();
         }
         [SecuredOperation("Admin")]

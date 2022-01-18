@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.BusinessAspect.AutoFac;
 using Core.Entities.Concrete;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
@@ -15,6 +16,7 @@ namespace Business.Concrete
         {
             _userDal = userDal;
         }
+        [SecuredOperation("Admin")]
         public Result AddUser(User user)
         {
             _userDal.Add(user);

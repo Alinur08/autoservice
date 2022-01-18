@@ -6,7 +6,7 @@ using System.Text;
 
 namespace DataAccess.Abstract
 {
-    public interface ICarVideoDal:IEntityRepository<CarVideo>
+    public interface ISparePartVideoDal:IEntityRepository<SparePartVideo>
     {
     }
 }

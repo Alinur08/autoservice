@@ -17,7 +17,8 @@ namespace Entities.Concrete
         public int BrandId { get; set; }
         public Model Model { get; set; }
         public Brand Brand { get; set; }
-        public String Detail { get; set; }
+        public string Detail { get; set; }
         public List<SparePartPhoto> SparePartPhotos { get; set; }
+        
     }
 }

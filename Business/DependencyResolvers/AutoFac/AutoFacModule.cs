@@ -41,14 +41,28 @@ namespace Business.DependencyResolvers.AutoFac
             builder.RegisterType<CarPhotoManager>().As<ICarPhotoService>();
             builder.RegisterType<EfCarPhotoDal>().As<ICarPhotoDal>();
 
-            builder.RegisterType<CarVideoManager>().As<ICarVideoService>();
-            builder.RegisterType<EfCarVideoDal>().As<ICarVideoDal>();
+            builder.RegisterType<SparePartVideoManager>().As<ISparePartVideoService>();
+            builder.RegisterType<EfSparePartVideoDal>().As<ISparePartVideoDal>();
+
+
+            builder.RegisterType<EfSparePartDal>().As<ISparePartDal>();
+            builder.RegisterType<SparePartManager>().As<ISparePartService>();
+          
+
+            builder.RegisterType<SparePartPhotoManager>().As<ISparePartPhotoService>();
+            builder.RegisterType<EfSparePartPhotoDal>().As<ISparePartPhotoDal>();
 
             builder.RegisterType<BrandManager>().As<IBrandService>();
             builder.RegisterType<EfBrandDal>().As<IBrandDal>();
 
             builder.RegisterType<JwtHelper>().As<ITokenHelper>();
             builder.RegisterType<CloudinaryFileService>().As<IFileService>();
+
+            builder.RegisterType<TransCareManager>().As<ITransCareService>();
+            builder.RegisterType<EfTransCareDal>().As<ITransCareDal>();
+
+            builder.RegisterType<TransCarePhotoManager>().As<ITransCarePhotoService>();
+            builder.RegisterType<EfTransCarePhotoDal>().As<ITransCarePhotoDal>();
 
             var assemblies = System.Reflection.Assembly.GetExecutingAssembly();
             builder.RegisterAssemblyTypes(assemblies).AsImplementedInterfaces().EnableInterfaceInterceptors(new ProxyGenerationOptions{Selector=new AspectInterceptorSelector()});

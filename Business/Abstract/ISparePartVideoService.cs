@@ -7,10 +7,10 @@ using System.Text;
 
 namespace Business.Abstract
 {
-    public interface ICarVideoService
+    public interface ISparePartVideoService
     {
-        Result AddVideo(CarVideoCreationDto carVideo, int carId);
+        Result AddVideo(SparePartVideoCreationDto sparePartVideo);
         Result DeleteVideo(int videoId);
-        DataResult<List<CarVideoReturnDto>> GetVideos(int carId);
+        DataResult<List<SparePartVideoReturnDto>> GetVideos();
     }
 }
